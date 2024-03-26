@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomake</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nettoasunto - Ilmianna loistokohde</h1>
+    </header>
+    <form action>
+        <fieldset>
+            <legend>Ilmiantaja</legend>
+            <div>
+                <label>Nimi:</label>
+                <input type="text" placeholder="Kirjoita nimesi tähän">
+            </div>
+            <div>
+                <label>Puhelinumero:</label>
+                <input type="text" placeholder="Puhelinnumero muodossa 040 xxx xxx x">
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="text" placeholder="Kirjoita sähköpostiosoitteesi tähän">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Ilmoituksen URL</legend>
+            <div>
+                <label>Myynti-ilmoituksen URL:</label>
+                <input type="text" placeholder="Kopio jokakodin/Etuoven kohdeURL tähän">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Asunnon pyyntihinta</legend>
+            <div>
+                <label class="center" id="pyyntihinta">250 kEUR</label>
+                <div class="inline">
+                    <label>1 kEUR</label>
+                    <input type="range" min="1" max="500" oninput="pyyntihinta.innerText = this.value+' kEUR'">
+                    <label>500 kEUR</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Arvioimani hinta</legend>
+            <div>
+                <label class="center" id="omaarvio">250 kEUR</label>
+                <div class="inline">
+                    <label>1 kEUR</label>
+                    <input type="range" min="1" max="500" oninput="omaarvio.innerText = this.value+' kEUR'">
+                    <label>500 kEUR</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Suosikkiasuinalueeni</legend>
+            <input type="text">
+        </fieldset>
+
+        <button>Ilmiannan asunto!</button>
+    </form>
+    <footer>
+        <p>2014 Q&D Software LTd. Kaikki oikeudet pidätetään</p>
+    </footer>
+</body>
+</html>

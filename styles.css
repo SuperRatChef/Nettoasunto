@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*border: dotted 1px red;*/
+}
+body{
+    margin: 0 auto;
+}
+header{
+    text-align: center;
+    color: rgb(44, 151, 151);
+}
+form{
+    background-color: rgb(82, 82, 82);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    padding: 1.5em;
+    border-radius: 1em;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+form legend{
+    background-color:rgb(44, 151, 151);
+    color: white;
+    border: solid 2px rgb(21, 75, 75);
+    padding: 2px;
+    width: 35%;
+    border-radius: 0.5em;
+    margin: 0.5em;
+}
+form fieldset{
+    background-color: rgba(255, 255, 255, 0.829);
+    border-radius: 0.4em;
+    margin: 1em;
+    padding-bottom: 1em;
+}
+form label{
+    padding: 0.3em;
+    margin: 0 2.5%;
+    display: block;
+}
+form input{
+    background-color: white;
+    border: none;
+    padding: 0.3em;
+    width: 95%;
+    margin: 0 2.5%;
+}
+form input[type="range"]{
+    width: 50%;
+}
+form button{
+    background-color: rgb(44, 151, 151);
+    border: solid 2px rgb(21, 75, 75);
+    margin: 1em;
+    border-radius: 1em;
+    color: white;
+    width: 20%;
+    min-width: 100px;
+    padding: 2em;
+}
+button:hover{
+    background-color: white;
+    color: rgb(44, 151, 151);
+    cursor: pointer;
+}
+
+form input::placeholder{
+    color: rgb(129, 129, 255);
+}
+.inline{
+    display: flex;
+    flex-direction: row;
+}
+.center{
+    text-align: center;
+}
+footer{
+    text-align: center;
+    margin: 1em;
+    color: grey;
+}
